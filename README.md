@@ -43,7 +43,7 @@ I used the browser's local storage to store the custom beer data. This choice si
 TypeScript was used to provide static type-checking. This adds an additional layer of reliability to the code, catching potential type-related bugs during development.
 
 - SSR:
-Fetching a collection of beers from the API has been reduced to client side rendering due to the desire to implement infinite scrolling. In case of page pagination, it would be better to leave SSR.
+Fetching a collection of beers from the API has been reduced to client side rendering due to the desire to implement infinite scrolling.
 
 - SEO:
 It's a proof of concept, so SEO is completely basic here
