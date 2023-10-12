@@ -24,9 +24,6 @@ export const Button = ({
     case "secondary":
       buttonTypeClass = "bg-gray-300 hover:bg-gray-400 text-gray-700";
       break;
-    case "close":
-      buttonTypeClass = "p-1 border-0 hover:opacity-70 transition";
-      break;
     default:
       buttonTypeClass = "bg-blue-900 hover:bg-blue-700 text-white";
   }
