@@ -8,9 +8,9 @@ Ready to explore the world of craft beers? Setting up is just three simple steps
 
 ```sh
 git clone git@github.com:Maku4/Impact-beer-case.git
-cd beer-collection
 npm i
 ```
+Make sure you are in the correct directory in the terminal.
 
 ## 🛠 Development Environment
 
@@ -18,9 +18,8 @@ Fire up the DevServer and watch your changes reflect live:
 
 ```sh
 npm start
-
--> http://localhost:3000
 ```
+-> http://localhost:3000
 
 ## 💬 Features
 
