@@ -14,7 +14,7 @@ Make sure you are in the correct directory in the terminal.
 
 ## 🛠 Development Environment
 
-Fire up the DevServer and watch your changes reflect live:
+Fire up the DevServer:
 
 ```sh
 npm start
