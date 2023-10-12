@@ -46,7 +46,7 @@ TypeScript was used to provide static type-checking. This adds an additional lay
 Fetching a collection of beers from the API has been reduced to client side rendering due to the desire to implement infinite scrolling.
 
 - SEO:
-It's a proof of concept, so SEO is completely basic here
+It's a proof of concept, so SEO is completely basic here.
 
 - Reusability of components:
 I see that the reusability of components could be at a higher level, i.e. BeerTile should be built on the principle of a reusable component, e.g. Card. However, it's a small app, so I didn't want to focus on building an entire ecosystem.
