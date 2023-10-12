@@ -33,32 +33,32 @@ Due to limited time, I focused on the main functionalities. As an addition, I ad
 
 ## 📝 Architecture Considerations
 
-- Priorities
+- Priorities:
 Speed development, usability, design simplicity, maintainability
 
-- Local Storage Management
+- Local Storage Management:
 I used the browser's local storage to store the custom beer data. This choice simplifies the architecture for this proof of concept and avoids the need for an external backend or database. The data is stored in JSON format, making it easier to retrieve and manage.
 
-- Typescript
+- Typescript:
 TypeScript was used to provide static type-checking. This adds an additional layer of reliability to the code, catching potential type-related bugs during development.
 
-- SSR
+- SSR:
 Fetching a collection of beers from the API has been reduced to client side rendering due to the desire to implement infinite scrolling. In case of page pagination, it would be better to leave SSR.
 
-- SEO
+- SEO:
 It's a proof of concept, so SEO is completely basic here
 
-- Reusability of components
+- Reusability of components:
 I see that the reusability of components could be at a higher level, i.e. BeerTile should be built on the principle of a reusable component, e.g. Card. However, it's a small app, so I didn't want to focus on building an entire ecosystem.
 
-- Image Handling
+- Image Handling:
 Images are uploaded and displayed using Object URLs, which are memory-friendly as they're automatically released when no longer in use. In a production app, images would likely be uploaded to a CDN or a file server and referenced by URL.
 
-- Error Handling
+- Error Handling:
 Basic error handling (e.g., checking for null or undefined values) has been added. However, for a production-level app, more robust error handling and validations would be needed.
 
-- Validation
+- Validation:
 For a production-level app, more robust would be needed.
 
-Conclusion
+Conclusion:
 This project is a proof of concept, showcasing how one can build a custom beer collection manager using Next.js, TypeScript, TailwindCSS and browser APIs. It can serve as a foundation for a more feature-rich application in the future.
