@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Beer Collection Application
 
-## Getting Started
+![Beer Collection App Preview](./public/beer-collection-preview.png)
 
-First, run the development server:
+## 🚀 Getting Started
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Ready to explore the world of craft beers? Setting up is just three simple steps away!
+
+```sh
+git clone git@github.com:Maku4/Impact-beer-case.git
+cd beer-collection
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Development Environment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Fire up the DevServer and watch your changes reflect live:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+npm start
 
-## Learn More
+-> http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 💬 Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🎯 Overview: Infinite list of beers fetched from PunkAPI.
+- 🎯 Details: Dive deep into individual beer details with a click.
+- 🎯 Beer Addition: Expand your collection by adding new beer bottles.
+- 🎯 Available on all screen devices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🎨 What about extended functionality?
+Due to limited time, I focused on the main functionalities. As an addition, I added infinite scrolling and user friendly multistep form for adding custom beers.
 
-## Deploy on Vercel
+## 📝 Architecture Considerations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Priorities
+Speed development, usability, design simplicity, maintainability
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Local Storage Management
+I used the browser's local storage to store the custom beer data. This choice simplifies the architecture for this proof of concept and avoids the need for an external backend or database. The data is stored in JSON format, making it easier to retrieve and manage.
+
+- Typescript
+TypeScript was used to provide static type-checking. This adds an additional layer of reliability to the code, catching potential type-related bugs during development.
+
+- SSR
+Fetching a collection of beers from the API has been reduced to client side rendering due to the desire to implement infinite scrolling. In case of page pagination, it would be better to leave SSR.
+
+- SEO
+It's a proof of concept, so SEO is completely basic here
+
+- Reusability of components
+I see that the reusability of components could be at a higher level, i.e. BeerTile should be built on the principle of a reusable component, e.g. Card. However, it's a small app, so I didn't want to focus on building an entire ecosystem.
+
+- Image Handling
+Images are uploaded and displayed using Object URLs, which are memory-friendly as they're automatically released when no longer in use. In a production app, images would likely be uploaded to a CDN or a file server and referenced by URL.
+
+- Error Handling
+Basic error handling (e.g., checking for null or undefined values) has been added. However, for a production-level app, more robust error handling and validations would be needed.
+
+- Validation
+For a production-level app, more robust would be needed.
+
+Conclusion
+This project is a proof of concept, showcasing how one can build a custom beer collection manager using Next.js, TypeScript, TailwindCSS and browser APIs. It can serve as a foundation for a more feature-rich application in the future.
