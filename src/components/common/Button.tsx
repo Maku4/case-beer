@@ -19,7 +19,7 @@ export const Button = ({
   let buttonTypeClass = "";
   switch (ver) {
     case "primary":
-      buttonTypeClass = "bg-blue-900 border hover:bg-blue-700 text-white";
+      buttonTypeClass = "bg-blue-700 hover:bg-blue-700 text-white";
       break;
     case "secondary":
       buttonTypeClass = "bg-gray-300 hover:bg-gray-400 text-gray-700";

@@ -51,6 +51,7 @@ function Header() {
             } md:relative md:p-0 md:bg-transparent md:shadow-none md:block md:w-full z-10`}
           >
             <Button
+              ver="secondary"
               className="mb-2 mr-2 w-full md:w-auto md:mb-0"
               onClick={() => setModalOpen(true)}
             >
@@ -62,8 +63,8 @@ function Header() {
               </Button>
             </Link>
             <Link href="/custom-collection">
-              <Button className="w-full md:w-auto">
-                Custom Beers Collection
+              <Button ver="primary" className="w-full md:w-auto">
+                Custom Beers
               </Button>
             </Link>
           </div>

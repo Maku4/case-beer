@@ -34,6 +34,9 @@ Due to limited time, I focused on the main functionalities. As an addition, I ad
 - Priorities:
 Speed development, usability, design simplicity, maintainability
 
+- Tests:
+Due to the lack of requirements in the specification and the limited amount of time, I omitted writing the tests, but what should definitely be tested is fetching (mocked) data, infinite scroll operation and filling out the form with submitting.
+
 - Local Storage Management:
 I used the browser's local storage to store the custom beer data. This choice simplifies the architecture for this proof of concept and avoids the need for an external backend or database. The data is stored in JSON format, making it easier to retrieve and manage.
 
