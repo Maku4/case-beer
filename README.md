@@ -1,7 +1,5 @@
 # Beer Collection Application
 
-![Beer Collection App Preview](./public/beer-collection-preview.png)
-
 ## 🚀 Getting Started
 
 Ready to explore the world of craft beers? Setting up is just three simple steps away!
