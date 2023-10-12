@@ -61,5 +61,8 @@ Basic error handling (e.g., checking for null or undefined values) has been adde
 - Validation:
 For a production-level app, more robust would be needed.
 
+- Hardcoded text:
+Text for future internalization should not be hardcoded and should be stored in a special file.
+
 Conclusion:
 This project is a proof of concept using Next.js, TypeScript, TailwindCSS and browser APIs. It can serve as a foundation for a more feature-rich application in the future.
