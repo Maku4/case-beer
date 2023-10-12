@@ -61,4 +61,4 @@ Basic error handling (e.g., checking for null or undefined values) has been adde
 For a production-level app, more robust would be needed.
 
 Conclusion:
-This project is a proof of concept, showcasing how one can build a custom beer collection manager using Next.js, TypeScript, TailwindCSS and browser APIs. It can serve as a foundation for a more feature-rich application in the future.
+This project is a proof of concept using Next.js, TypeScript, TailwindCSS and browser APIs. It can serve as a foundation for a more feature-rich application in the future.
