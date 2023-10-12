@@ -1,3 +1,4 @@
+// svg get from other site
 export const DefaultBeer = () => (
   <div
     style={{
